@@ -1,0 +1,15 @@
+# vim: ft=gitconfig
+[core]
+	autocrlf = false
+	filemode = false
+	quotepath = false
+[color]
+	ui = true
+[merge]
+	ff = false
+[pull]
+	ff = only
+[alias]
+    ls = ls-files
+    co = checkout
+    current =!git status --branch | head -1 | sed -e 's/On branch //g'
