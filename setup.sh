@@ -4,7 +4,7 @@
 
 lacked=''
 
-for package in curl git tig xsel vim tree tmux; do
+for package in curl git tig xsel vim tree; do
     if [[ $(which $package) = '' ]]; then
         lacked="$lacked $package"
     fi
@@ -13,10 +13,6 @@ done
 if [[ ! $lacked = '' ]]; then
     sudo apt install -y $lacked
 fi
-
-# Tmux
-
-ln -sf $(pwd)/.tmux.conf          $HOME
 
 # Bash
 
