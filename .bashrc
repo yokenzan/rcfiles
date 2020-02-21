@@ -61,16 +61,16 @@ GIT_PS1_SHOWUPSTREAM=1          # < / > / = / <>
 
 # define basical prompt
 
-PS1='\n\[\033[31;4m\]\D{%Y/%m/%d %H:%M:%S}\[\033[00m\] \[\033[31m\]\u@\h\[\033[00m\] '
+PS1='\n\[\033[31m\]\D{%Y/%m/%d %H:%M:%S}\[\033[00m\] \[\033[32m\]\u@\h\[\033[00m\] '
 
 
 # detect whether current process is whithin a Vim session
 
 if [[ $VIMRUNTIME != "" ]] ; then
-    PS1=$PS1' \[\033[5;1;34m\](vim)\[\033[00m\] '
+    PS1=$PS1'\[\033[5;1;34m\](vim)\[\033[00m\] '
 fi
 
-PS1=$PS1'\[\033[3;33;4m\]\w\[\033[00m\]\[\033[35m\]$(__git_ps1)\[\033[00m\]\n\[\033[36m\]$(whoami) Kizuna-VM'
+PS1=$PS1'\[\033[3;33;4m\]\w\[\033[00m\]\[\033[35m\]$(__git_ps1)\[\033[00m\]\n\[\033[36m\]Kizuna-VM'
 
 # confirm prompt
 
