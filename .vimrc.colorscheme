@@ -2,11 +2,11 @@
 
 syntax on
 set t_Co=256
-
+set termguicolors
 
 colorscheme desert
 " colorscheme koehler
 
 
 " set background=dark
-set background=light
+" set background=light
