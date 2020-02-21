@@ -40,10 +40,10 @@ mkdir -p ~/.config/git/completion
 GIT_VERSION=v$(git --version | sed -e ' s/.* //')
 
 curl -sS \
-    -O $HOME/.config/git/completion/git-completion.bash \
+    -o $HOME/.config/git/completion/git-completion.bash \
     https://raw.githubusercontent.com/git/git/$GIT_VERSION/contrib/completion/git-completion.bash
 curl -sS \
-    -O $HOME/.config/git/completion/git-prompt.sh \
+    -o $HOME/.config/git/completion/git-prompt.sh \
     https://raw.githubusercontent.com/git/git/$GIT_VERSION/contrib/completion/git-prompt.sh
 
 # Tig
