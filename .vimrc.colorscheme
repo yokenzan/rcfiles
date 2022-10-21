@@ -2,7 +2,7 @@
 
 syntax on
 set t_Co=256
-set termguicolors
+set notermguicolors
 
 colorscheme desert
 " colorscheme koehler
